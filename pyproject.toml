@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "user-api"
+version = "0.1.0"
+description = "REST API for user management"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+python-dotenv = "^1"
+litestar = {extras = ["standard"], version = "2.4.0"}
+litestar-granian = "^0"
+litestar-asyncpg = "^0"
+advanced-alchemy = "0.6.0"
+msgspec = "^0.18.6"
+black = "^25.1.0"
+
+[tool.poetry.group.dev.dependencies]
+alembic = "^1.13.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
